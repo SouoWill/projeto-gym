@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+:root {
+    --font-padrao: 'Poppins', sans-serif;
+
+    --cor-1: #F2BF5E;
+    --cor-2: #F2CC85;
+    --cor-3: #F2DAAC;
+    --cor-4: #F2E6D0;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: var(--font-padrao);
+}
