@@ -71,7 +71,7 @@ body, html {
 }
 
 #itens li, #itens2 li {
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 #itens li:nth-child(1), #itens2 li:nth-child(1) {
@@ -178,6 +178,7 @@ body, html {
 
 #quem-somos {
     padding: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.075);
 }
 
 .title-main-content-section1 {
@@ -235,6 +236,7 @@ body, html {
 
 #servicos {
     padding: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.075);
 }
 
 .div-main-content-section-servicos {
@@ -264,6 +266,14 @@ body, html {
 }
 
 /* CARD */
+
+.content-card h3 span {
+    font-size: 10px;
+    padding: 0px;
+    text-shadow: none;
+    color: var(--cinza);
+
+} 
 
 .cards-servicos {
     display: flex;
