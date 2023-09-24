@@ -244,6 +244,12 @@ body, html {
     align-items: center;
 }
 
+.div-main-content-section-servicos p {
+    color: var(--cinza);
+    padding-bottom: 30px;
+    font-size: 12px;
+}
+
 .title-main-content-section2 {
     padding-top: 50px;
     font-size: 15px;
