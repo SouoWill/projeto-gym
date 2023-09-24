@@ -3,10 +3,11 @@
 :root {
     --font-padrao: 'Poppins', sans-serif;
 
-    --cor-1: #F2BF5E;
+    --cor-1: #F2C75C;
     --cor-2: #F2CC85;
     --cor-3: #F2DAAC;
     --cor-4: #F2E6D0;
+    --cinza: rgb(102, 102, 102);
 }
 
 * {
@@ -17,4 +18,237 @@
 
 body, html {
     font-family: var(--font-padrao);
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.div-linha {
+    height: 1px;
+    width: 50px;
+    border-radius: 1000px;
+    background-color: var(--cinza);
+    padding-top: 3px;
+}
+
+/* HEADER */
+
+.main-header {
+    background: url(../imagens/imagem-fundo.jpg)  right bottom no-repeat fixed;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.nav-main-header {
+    z-index: 1;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.048);
+    padding: 20px 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+
+.nav-main-header img {
+    width: 80px;
+}
+
+#itens {
+    list-style: none;
+    position: absolute;
+    top: 55px;
+    right: 0;
+    padding: 50px;
+    padding-top: 20px;
+    border-radius: 0px 0px 0px 10px;
+    height: 300px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.555);
+}
+
+#itens li, #itens2 li {
+    margin-top: 50px;
+}
+
+#itens li:nth-child(1), #itens2 li:nth-child(1) {
+    margin-top: 0px;
+}
+
+#itens li a, #itens2 li a{
+    font-size: 20px;
+    font-weight: 400;
+    transition: .4s;
+    color: white;
+    border-bottom: 1px solid white;
+    text-decoration: none;
+}
+
+#itens li a:hover, #itens2 li a:hover{
+    color: var(--cor-1);
+    border-bottom: 1px solid var(--cor-1);
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.986);
+}
+
+#itens2 {
+    display: none;
+}
+
+#burguer {
+    cursor: pointer;
+    color: white;
+    transition: .4s;
+}
+
+#burguer:hover {
+    transform: scale(1.2);
+    color: var(--cor-1);
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.986);
+}
+
+.rolagem {
+    background-color: rgba(0, 0, 0, 0.555);
+    padding: 10px;
+    border: 0px;
+}
+
+.div-main-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 10px;
+}
+
+.p-main-header {
+    color: rgb(102, 102, 102);
+}
+
+.title-main-header {
+    padding: 30px 0px;
+}
+
+.span-title-main-header {
+    color: var(--cor-1);
+}
+
+.h2-main-header {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 30px 0px;
+}
+
+.btn-main-header {
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--cor-1);
+    color: rgba(0, 0, 0, 0.815);
+    font-weight: 600;
+    font-size: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.521);
+    transition: .5s;
+}
+
+.btn-main-header:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.418);
+}
+
+/* MAIN */
+
+/* SEC 1*/
+.main-content {
+    background-color: white;
+    color: black;
+}
+
+#quem-somos {
+    padding: 30px;
+}
+
+.title-main-content-section1 {
+    padding-top: 25px;
+    font-size: 15px;
+    color: var(--cinza);
+}
+
+.h2-main-content-section1 {
+    padding-top: 20px;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: start;
+}
+
+.main-content-section2 {
+    margin-top: 50px;
+}
+
+.span-main-section2 {
+    float: left;
+    padding-right: 10px;
+    color: var(--cor-1);
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 40px;
+    text-shadow: -4px 3px 4px rgba(0, 0, 0, 0.322);
+}
+
+.p-main-content-section2 {
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.637);
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.div-div-main-content-section2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.div-p-main-content-section2 {
+    padding-bottom: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.774);
+}
+
+.check {
+    padding-right: 10px;
+}
+
+/* SEC 2 */
+
+#servicos {
+    padding: 30px;
+}
+
+.div-main-content-section-servicos {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-main-content-section2 {
+    padding-top: 50px;
+    font-size: 15px;
+    color: var(--cinza);
+    padding-bottom: 20px;
+}
+
+.h2-main-content-section2 {
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 20px;
 }

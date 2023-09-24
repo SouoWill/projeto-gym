@@ -5,31 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GYM - A melhor para a sua saúde</title>
     <!-- LINKS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/medias.css">
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
 </head>
-<body>
-    <header>
-        <a href="#"><img src="imagens/logo-gym.png" alt=""></a>
+<body onresize="mudouTamanho()">
+    <header class="main-header" id="inicio">
+        
+        <nav class="nav-main-header">
+            <a href="#"><img src="imagens/logo-gym.png" alt=""></a>
 
-        <nav class="nav-header">
-            <ul>
-                <li>Inicio</li>
-                <li>Quem somos</li>
-                <li>Serviços</li>
-                <li>Contatos</li>
+            <span class="material-icons" id="burguer" onclick="clickMenu()">menu</span>
+
+            <ul id="itens">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#quem-somos">Quem somos</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contatos">Contatos</a></li>
+            </ul>
+            <ul id="itens2">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#quem-somos">Quem somos</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contatos">Contatos</a></li>
             </ul>
         </nav>
-    </header>
-    <main>
 
+        <div class="div-main-header">
+            <p class="p-main-header">BEM-VINDOS À ACADEMIA CIA DO CORPO</p>
+            <h1 class="title-main-header">A sua melhor opção para uma vida <span class="span-title-main-header">MAIS</span> saudável!</h1>
+            <div class="div-linha"></div>
+            <h2 class="h2-main-header">Musculação, Muay Thai, Ginástica (Ritmos, Jump, Step, Hiit, Pilates e muito mais.)</h2>
+            <button class="btn-main-header">MARQUE JÁ SEU TREINO EXPERIMENTAL NA UNIDADE MAIS PRÓXIMA DE VOCÊ</button>
+        </div>
+    </header>
+    <main class="main-content">
+        <section id="quem-somos">
+            <div class="main-content-section1">
+                <h1 class="title-main-content-section1">Quem Somos</h1>
+                <h2 class="h2-main-content-section1">Faça parte da comunidade de alunos que transformam suas vidas na academia.</h2>
+            </div>
+            <div class="main-content-section2">
+                <p class="p-main-content-section2"><span class="span-main-section2">A</span> academia GYM é uma academia completa que oferece musculação, ginástica e artes marciais. Com um compromisso firme com a saúde de seus alunos, a academia busca oferecer um ambiente seguro e de qualidade para a prática de exercício físico.</p>
+                <p class="p-main-content-section2">O objetivo principal é cuidar das pessoas, buscando sempre o seu bem-estar físico e mental. Com equipamentos modernos e uma infraestrutura de alta qualidade, a academia oferece uma experiência única para quem busca cuidar do corpo e da mente.</p>
+                <div class="div-div-main-content-section2">
+                    <p class="div-p-main-content-section2"><span class="material-symbols-outlined check">task_alt</span>equipamentos modernos</p>
+                    <p class="div-p-main-content-section2"><span class="material-symbols-outlined check">task_alt</span>instrutores capacitados e experientes</p>
+                    <p class="div-p-main-content-section2"><span class="material-symbols-outlined check">task_alt</span>aulas variadas de ginástica</p>
+                    <p class="div-p-main-content-section2"><span class="material-symbols-outlined check">task_alt</span>treinos personalizados</p>
+                </div>
+            </div>
+        </section>
+        <section id="servicos">
+
+            <div class="div-main-content-section-servicos">
+                <h1 class="title-main-content-section2">Nossos serviços</h1>
+                <h2 class="h2-main-content-section2">Conheça os nossos serviços</h2>
+                <div class="div-linha"></div>
+            </div>
+
+            <article class="card-main-section-servicos">
+                <div class="img-musculacao"></div>
+                <div class="check-circle"><span class="material-symbols-outlined check">task_alt</span></div>
+                <h3>Musculação</h3>
+                <div class="div-linha"></div>
+                <p>É a modalidade mais versátil, que possibilita trabalhar diversos grupos musculares em um único treino, com exercícios que podem ser facilmente adaptados de acordo com as limitações de cada aluno.</p>
+            </article>
+
+            <article class="card-main-section-servicos">
+                <div class="img-musculacao"></div>
+                <div class="check-circle"><span class="material-symbols-outlined check">task_alt</span></div>
+                <h3>Ginástica</h3>
+                <div class="div-linha"></div>
+                <p>Temos aulas de Zumba, Dança, Jump, Pump, Local, Step, Cross Training, Ritbox, Functional, Hiit, Pilates e Alongamento. Todas as aulas possuem horários específicos durante a semana.</p>
+            </article>
+
+            <article class="card-main-section-servicos">
+                <div class="img-musculacao"></div>
+                <div class="check-circle"><span class="material-symbols-outlined check">task_alt</span></div>
+                <h3>Artes Marciais</h3>
+                <div class="div-linha"></div>
+                <p>Com aulas de Muay Thai, uma das artes marciais mais completas, os alunos aprendem técnicas de defesa pessoal e fortalecem o corpo e a mente.</p>
+            </article>
+
+        </section>
     </main>
     <footer>
 
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
