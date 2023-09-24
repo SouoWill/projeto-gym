@@ -58,6 +58,7 @@ body, html {
 }
 
 #itens {
+    display: none;
     list-style: none;
     position: absolute;
     top: 55px;
