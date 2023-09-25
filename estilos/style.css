@@ -609,7 +609,6 @@ body, html {
 }
 
 .header-contatos h2 {
-    width: 350px;
     padding-bottom: 20px;
     text-align: center;
     font-weight: 600;
@@ -657,7 +656,7 @@ body, html {
     height: 150px;
     border-bottom: 1px solid var(--cor-1);
     border-top: 1px solid var(--cor-1);
-
+    width: 90vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -673,7 +672,11 @@ body, html {
 }
 
 .sec-footer {
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px 20px;
+    padding: 20px;
 }
 
 .sec-footer p {
@@ -704,4 +707,10 @@ body, html {
     color: var(--cor-2);
     text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.801);
     transform: scale(1.05);
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

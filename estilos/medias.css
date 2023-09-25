@@ -1,6 +1,10 @@
 @charset "UTF-8";
 
 @media screen and (min-width: 769px) {
+
+    .main-header {
+        background-position: center center;
+    }    
     #burguer {
         display: none;
     }
@@ -20,6 +24,10 @@
 
     #itens li a {
         font-size: 15px;
+    }
+
+    .sec-footer {
+        flex-direction: row;
     }
 }
 
