@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 769px) {
+    #burguer {
+        display: none;
+    }
+
+    #itens {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        position: static;
+        padding: 0px;
+        height: 0;
+    }
+
+    #itens li {
+        padding: 0px;
+    }
+
+    #itens li a {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 993px) {
+    .img-fundo-halter {
+        display: block;
+    }
+
+    .sec-content-contatos {
+        justify-content: space-evenly;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+
+}
