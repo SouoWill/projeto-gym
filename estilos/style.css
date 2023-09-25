@@ -178,8 +178,12 @@ body, html {
 }
 
 #quem-somos {
-    padding: 30px;
+    padding: 30px 50px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.075);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
 }
 
 .title-main-content-section1 {
@@ -193,10 +197,23 @@ body, html {
     font-size: 25px;
     font-weight: 600;
     text-align: start;
+    width: 400px;
+}
+
+.img-fundo-halter {
+    height: 400px;
+    width: 27vw;
+    margin-top: 30px;
+    background: #333 url(../imagens/halter.jpg) center center no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+
+    display: none;
 }
 
 .main-content-section2 {
     margin-top: 50px;
+    width: 400px;
 }
 
 .span-main-section2 {
@@ -213,7 +230,7 @@ body, html {
     font-weight: 400;
     line-height: 24px;
     color: rgba(0, 0, 0, 0.637);
-    text-align: justify;
+    text-align: left;
     margin-bottom: 30px;
 }
 
@@ -224,8 +241,8 @@ body, html {
 
 .div-p-main-content-section2 {
     padding-bottom: 30px;
-    font-size: 20px;
-    font-weight: 600;
+    font-weight: 400;
+    font-size: 14.7px;
     color: rgba(0, 0, 0, 0.774);
 }
 
@@ -236,7 +253,7 @@ body, html {
 /* SEC 2 */
 
 #servicos {
-    padding: 30px;
+    padding: 30px 50px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.075);
 }
 
@@ -389,7 +406,7 @@ body, html {
 /* CARD unidades */
 
 #unidades {
-    padding: 30px;
+    padding: 30px 50px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.075);
 }
 
@@ -409,6 +426,25 @@ body, html {
 
 .card-unidades:hover:after {
     top: 25%;
+    opacity: 1;
+}
+
+.card-unidades:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: -70%;
+    width: 3px;
+    height: 100px;
+    transition: top, opacity;
+    transition-duration: 500ms;
+    transition-timing-function: ease;
+    background: linear-gradient(transparent, var(--cor-1), transparent);
+    opacity: 0;
+}
+
+.card-unidades:hover:before {
+    top: 30%;
     opacity: 1;
 }
 
@@ -468,9 +504,12 @@ body, html {
 /* PORQUE NOS */
 
 #porque-nos {
-    padding: 50px 30px;
+    padding: 30px 50px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.075);
     background-color: #F2C75C;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .sec1-porque-nos {
@@ -501,11 +540,11 @@ body, html {
     text-indent: 3;
     text-align: justify;
     padding-bottom: 50px;
+    width: 420px;
 }
 
 .div-sec2-porque-nos {
     display: flex;
-    gap: 0 50px;
 }
 
 .div-sec2-porque-nos .check {
@@ -524,6 +563,7 @@ body, html {
     text-indent: 3;
     text-align: start;
     padding-bottom: 50px;
+    width: 370px;
 }
 
 .btn-porque-nos {
@@ -545,4 +585,68 @@ body, html {
     transform: scale(1.05);
     box-shadow: 0px 0px 10px 8px #3333333a;
     color: var(--cinza);
+}
+
+/* CONTATOS */
+
+#contatos {
+    padding: 30px 50px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.075);
+}
+
+.header-contatos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.header-contatos h1 {
+    padding: 20px 0px;
+    font-size: 15px;
+    color: var(--cinza);
+}
+
+.header-contatos h2 {
+    width: 350px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.sec-content-contatos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.sec-content-principal {
+    display: flex;
+    align-items: start;
+    gap: 30px;
+}
+
+.sec-content-principal .div-imagem-contatos {
+    width: 40px;
+    height: 40px;
+    transform: translateY(20px);
+}
+
+.sec-content-principal .div-imagem-contatos img {
+    width: 100%;
+}
+
+.sec-article-content-contatos {
+    padding-bottom: 30px;
+}
+
+.sec-article-content-contatos h3{
+    font-weight: 400;
+    padding: 20px 0px;
+    margin-right: 20px;
+}
+
+.sec-article-content-contatos p {
+    margin-top: 20px;
 }
