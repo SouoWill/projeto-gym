@@ -191,10 +191,10 @@ body, html {
 
 .h2-main-content-section1 {
     padding-top: 20px;
-    font-size: 25px;
+    font-size: 1.5em;
     font-weight: 600;
     text-align: start;
-    width: 400px;
+    max-width: 400px;
 }
 
 .img-fundo-halter {
@@ -296,7 +296,7 @@ body, html {
     align-items: center;
     gap: 100px 46px;
     flex-wrap: wrap;
-    padding: 100px 50px;
+    padding: 100px 0px;
 }
 
 .cards-servicos .card-servicos {
@@ -304,8 +304,8 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    width: 350px;
-    height: 300px;
+    width: 300px;
+    min-height: 300px;
     border-radius: 20px;
     box-shadow: 0 35px 80px rgba(0,0,0,.15);
     background-color: #fff;
@@ -313,7 +313,7 @@ body, html {
 }
 
 .cards-servicos .card-servicos:hover {
-    height: 400px;
+   min-height: 400px;
 }
 
 .cards-servicos .card-servicos .card-servicos-img {
@@ -451,7 +451,7 @@ body, html {
     align-items: center;
     gap: 100px 50px;
     flex-wrap: wrap;
-    padding: 100px 50px;
+    padding: 100px 0px;
 }
 
 
@@ -587,7 +587,7 @@ body, html {
 /* CONTATOS */
 
 #contatos {
-    padding: 50px 50px;
+    padding: 30px 50px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.075);
     display: flex;
     flex-direction: column;
