@@ -537,7 +537,7 @@ body, html {
     text-indent: 3;
     text-align: justify;
     padding-bottom: 50px;
-    width: 420px;
+    max-width: 420px;
 }
 
 .div-sec2-porque-nos {
