@@ -1,20 +1,17 @@
-function mudouTamanho() {
-    if (window.innerWidth >= 992) {
-        itens.style.display = 'block'
-    } else {
-        itens.style.display = 'none'
-    }
+// ABRI E FECHAR
+
+const menuDiv = document.getElementById('itens')
+const menuAnimar = document.getElementById('burguer')
+
+menuDiv.addEventListener('click', clickMenu)
+function clickMenu(){
+    menuDiv.classList.toggle('abrir-menu')
+    menuAnimar.classList.toggle('ativo')
+    const btn = document.getElementById('burguer')
+    btn.classList.toggle('animacao-menu')
 }
 
-function clickMenu() {
-    if (itens.style.display == 'block') {
-        itens.style.display = 'none'
-    } else {
-        itens.style.display = 'block'
-    }
-}
-
-/* HEADER FIXED */ 
+// HEADER FIXED
 
 window.addEventListener('scroll', function(){
     let header = document.querySelector('.nav-main-header')

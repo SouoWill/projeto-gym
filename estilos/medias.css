@@ -9,21 +9,32 @@
         display: none;
     }
 
-    #itens {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-        position: static;
-        padding: 0px;
-        height: 0;
+    #itens.abrir-menu {
+        height: 0px;
     }
 
-    #itens li {
+    #itens {
+        visibility: visible;
+        overflow: visible;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+        position: sticky;
         padding: 0px;
+        height: 0;
+        width: auto;
+        backdrop-filter: blur(0px);
+        z-index: 3;
     }
 
     #itens li a {
-        font-size: 15px;
+        font-size: .9em;
+        padding: 0px;
+        width: max-content;
+    }
+
+    #itens li a:hover {
+        background-color: transparent;
     }
 
     .sec-footer {

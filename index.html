@@ -14,14 +14,18 @@
     <link rel="stylesheet" href="estilos/medias.css">
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
 </head>
-<body onresize="mudouTamanho()">
+<body>
     <header class="main-header" id="inicio">
         
         <nav class="nav-main-header">
 
             <a href="index.html"><img src="imagens/logo-gym.png" alt=""></a>
 
-            <span class="material-icons" id="burguer" onclick="clickMenu()">menu</span>
+            <button id="burguer" onclick="clickMenu()">
+                <span class="linha"></span>
+                <span class="linha"></span>
+                <span class="linha"></span>
+            </button>
 
             <ul id="itens">
                 <li><a href="#inicio">Inicio</a></li>

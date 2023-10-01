@@ -21,6 +21,7 @@ body, html {
     font-family: var(--font-padrao);
     background-color: rgb(0, 0, 0);
     color: white;
+    width: 100%;
 }
 
 .div-linha {
@@ -31,17 +32,29 @@ body, html {
     padding-top: 3px;
 }
 
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar-thumb {
+    width: 8px;
+    background-color: var(--cor-1);
+    border-radius: 30px;
+}
+
 /* HEADER */
 
 .main-header {
     background: url(../imagens/imagem-fundo.jpg)  right bottom no-repeat fixed;
     background-size: cover;
     height: 100vh;
+    width: 100%;
     position: relative;
 }
 
 .nav-main-header {
-    z-index: 1;
+    z-index: 2;
     width: 100vw;
     display: flex;
     align-items: center;
@@ -54,61 +67,96 @@ body, html {
     transition: .5s;
 }
 
-.nav-main-header img {
+.nav-main-header a img {
     width: 80px;
 }
 
 #itens {
-    display: none;
-    list-style: none;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
     position: absolute;
-    top: 55px;
-    right: 0;
-    padding: 50px;
-    padding-top: 20px;
-    border-radius: 0px 0px 0px 10px;
-    height: 330px;
-    text-align: center;
-    background: rgba(0, 0, 0, 0.555);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: rgba(0, 0, 0, 0.363);
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    z-index: -1;
+    transition: .5s;
+    list-style: none;
 }
 
-#itens li {
-    padding-top: 30px;
-}
-
-#itens li:nth-child(1){
-    padding-top: 0px;
-}
-
-#itens li:nth-child(1){
-    margin-top: 0px;
+#itens.abrir-menu {
+    visibility: visible;
+    height: 100vh;
 }
 
 #itens li a{
-    font-size: 20px;
+    font-size: 1.5em;
     font-weight: 400;
-    transition: .4s;
-    color: white;
-    border-bottom: 1px solid white;
     text-decoration: none;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    display: block;
+    width: 100vw;
+    transition: .3s;
 }
 
-#itens li a:hover{
+#itens:hover li a {
+    opacity: .3;
+}
+
+#itens li a:hover {
+    transform: scale(1.1);
     color: var(--cor-1);
-    border-bottom: 1px solid var(--cor-1);
-    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.986);
+    text-shadow: 0px 0px 10px white;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 1;
 }
 
 #burguer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     cursor: pointer;
-    color: white;
-    transition: .4s;
+    width: 25px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    z-index: 1;
 }
 
-#burguer:hover {
-    transform: scale(1.2);
-    color: var(--cor-1);
-    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.986);
+.linha {
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    display: block;
+    position: relative;
+    transform-origin: center;
+    transition: 0.5s;
+}
+
+
+#burguer.animacao-menu .linha:nth-child(1){
+    transform: translateY(9px) rotate(-45deg);
+    background-color: var(--cor-1);
+    box-shadow: 0px 0px 7px var(--cor-1);
+}
+
+#burguer.animacao-menu .linha:nth-child(2) {
+    width: 0;
+}
+
+#burguer.animacao-menu .linha:nth-child(3) {
+    transform: translateY(-9px) rotate(45deg);
+    background-color: var(--cor-1);
+    box-shadow: 0px 0px 7px var(--cor-1);
 }
 
 .rolagem {
@@ -163,7 +211,7 @@ body, html {
 
 .btn-main-header:hover {
     transform: scale(1.05);
-    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.671);
 }
 
 /* MAIN */
@@ -172,6 +220,7 @@ body, html {
 .main-content {
     background-color: #fff;
     color: rgb(0, 0, 0);
+    width: 100%;
 }
 
 #quem-somos {
@@ -180,7 +229,7 @@ body, html {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-
+    width: 100%;
 }
 
 .title-main-content-section1 {
@@ -197,8 +246,9 @@ body, html {
     max-width: 400px;
 }
 
+
 .img-fundo-halter {
-    height: 400px;
+    height: 380px;
     width: 27vw;
     margin-top: 30px;
     background: #333 url(../imagens/halter.jpg) center center no-repeat;
@@ -209,7 +259,6 @@ body, html {
 }
 
 .main-content-section2 {
-    margin-top: 50px;
     width: 400px;
 }
 
@@ -229,9 +278,11 @@ body, html {
     color: rgba(0, 0, 0, 0.637);
     text-align: left;
     margin-bottom: 30px;
+    padding-top: 25px;
 }
 
 .div-div-main-content-section2 {
+    padding-top: 40px;
     display: flex;
     flex-direction: column;
 }
@@ -252,6 +303,7 @@ body, html {
 #servicos {
     padding: 30px 50px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.075);
+    width: 100%;
 }
 
 .div-main-content-section-servicos {
@@ -405,6 +457,7 @@ body, html {
 #unidades {
     padding: 30px 50px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.075);
+    width: 100%;
 }
 
 .card-unidades:after {
@@ -507,6 +560,7 @@ body, html {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .sec1-porque-nos {
@@ -545,7 +599,7 @@ body, html {
 }
 
 .div-sec2-porque-nos .check {
-    font-size: 40px;
+    font-size: 20px;
 }
 
 .div-sec2-porque-nos h3 {
@@ -556,11 +610,12 @@ body, html {
 
 .div-sec2-porque-nos p {
     color: var(--cinza);
-    font-size: 13px;
-    text-indent: 3;
+    font-size: 0.8em;
+    line-height: 1.5;
     text-align: start;
     padding-bottom: 50px;
-    width: 370px;
+    width: 100%;
+    max-width: 390px;
 }
 
 .btn-porque-nos {
@@ -592,6 +647,7 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 .header-contatos {
@@ -713,4 +769,5 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
