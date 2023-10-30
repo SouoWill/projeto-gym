@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+@media screen and (min-width: 748px) {
+    #servicos {
+        height: 1150px;
+    }
+}
+
 @media screen and (min-width: 769px) {
 
     .main-header {
@@ -51,5 +57,15 @@
         justify-content: space-evenly;
         flex-direction: row;
         flex-wrap: wrap;
+    }
+
+    .div-main-content-section-servicos p {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1092px) {
+    #servicos {
+        height: 750px;
     }
 }

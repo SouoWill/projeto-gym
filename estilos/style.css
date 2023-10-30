@@ -305,6 +305,7 @@ body, html {
     padding: 30px 50px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.075);
     width: 100%;
+    height: 1600px;
 }
 
 .div-main-content-section-servicos {
@@ -346,7 +347,7 @@ body, html {
 .cards-servicos {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     gap: 100px 46px;
     flex-wrap: wrap;
     padding: 100px 0px;
@@ -357,7 +358,8 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    width: 300px;
+    max-width: 300px;
+    width: 100%;
     min-height: 300px;
     border-radius: 20px;
     box-shadow: 0 35px 80px rgba(0,0,0,.15);
@@ -372,7 +374,8 @@ body, html {
 .cards-servicos .card-servicos .card-servicos-img {
     position: absolute;
     top: 20px;
-    width: 300px;
+    max-width: 300px;
+    width: 100%;
     height: 220px;
     border-radius: 12px;
     background-color: #333;
@@ -422,7 +425,6 @@ body, html {
 }
 
 .cards-servicos .card-servicos .content-card p {
-    padding-top: 5px;
     font-size: 14px;
     color: transparent;
 }
