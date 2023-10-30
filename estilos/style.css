@@ -249,8 +249,8 @@ body, html {
 
 
 .img-fundo-halter {
-    height: 380px;
-    width: 27vw;
+    height: 450px;
+    width: 370px;
     margin-top: 30px;
     background: #333 url(../imagens/halter.jpg) center center no-repeat;
     background-size: cover;

@@ -48,10 +48,13 @@
     }
 }
 
-@media screen and (min-width: 993px) {
+@media screen and (min-width: 900px) {
     .img-fundo-halter {
         display: block;
     }
+}
+
+@media screen and (min-width: 993px) {
 
     .sec-content-contatos {
         justify-content: space-evenly;
