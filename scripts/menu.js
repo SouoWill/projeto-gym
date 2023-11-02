@@ -1,4 +1,4 @@
-// ABRI E FECHAR
+// ABRI E FECHAR MENU
 
 const menuDiv = document.getElementById('itens')
 const menuAnimar = document.getElementById('burguer')
@@ -10,11 +10,4 @@ function clickMenu(){
     const btn = document.getElementById('burguer')
     btn.classList.toggle('animacao-menu')
 }
-
-// HEADER FIXED
-
-window.addEventListener('scroll', function(){
-    let header = document.querySelector('.nav-main-header')
-    header.classList.toggle('rolagem',window.scrollY > 500)
-})
 
