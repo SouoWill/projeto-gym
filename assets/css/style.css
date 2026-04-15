@@ -46,7 +46,7 @@ body, html {
 /* HEADER */
 
 .main-header {
-    background: url(/assets/images/imagem-fundo.jpg)  right bottom no-repeat fixed;
+    background: url(../images/imagem-fundo.jpg)  right bottom no-repeat fixed;
     background-size: cover;
     height: 100vh;
     width: 100%;
@@ -261,7 +261,7 @@ body, html {
     height: 450px;
     width: 370px;
     margin-top: 30px;
-    background: #333 url(/assets/images/halter.jpg) center center no-repeat;
+    background: #333 url(../images/halter.jpg) center center no-repeat;
     background-size: cover;
     border-radius: 20px;
 
@@ -543,7 +543,7 @@ body, html {
 .card-unidades .card-unidades-img {
     width: 100%;
     height: 180px;
-    background: var(--cor-1) url(/assets/images/unidades.png) center center no-repeat;
+    background: var(--cor-1) url(../images/unidades.png) center center no-repeat;
     background-size: cover;
 }
 

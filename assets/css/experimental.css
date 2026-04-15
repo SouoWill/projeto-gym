@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: url(/assets/images/imagem-fundo.jpg) right bottom no-repeat fixed;
+    background: url(../images/imagem-fundo.jpg) right bottom no-repeat fixed;
     background-size: cover;
     height: 100%;
     width: 100%;
