@@ -334,6 +334,15 @@ body, html {
     padding-bottom: 20px;
 }
 
+.check-section2 {
+    display: flex;
+}
+
+.check-section2  p{
+    padding-left: 10px;
+}
+
+
 /* CARD serviços */
 
 .content-card h3 span {
@@ -597,12 +606,12 @@ body, html {
     max-width: 420px;
 }
 
-.div-sec2-porque-nos {
+.div-sec2-porque-nos{
     display: flex;
 }
 
-.div-sec2-porque-nos .check {
-    font-size: 50px;
+.div-sec2-porque-nos div {
+    padding-left: 10px;
 }
 
 .div-sec2-porque-nos h3 {
