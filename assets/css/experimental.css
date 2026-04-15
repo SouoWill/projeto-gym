@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url(/assets/images/imagem-fundo.jpg) right bottom no-repeat fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    color: #fff;
+}
+
+/* CONTAINER PRINCIPAL */
+.form-page {
+    max-width: 450px;
+    margin: 80px auto;
+    padding: 30px;
+    background: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+/* TÍTULO */
+.form-page h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+/* FORM */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* LABEL */
+label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* INPUTS E SELECT */
+input,
+select {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background: #2a2a2a;
+    color: #fff;
+    outline: none;
+    transition: 0.2s;
+}
+
+/* FOCUS */
+input:focus,
+select:focus {
+    border: 1px solid #F2C75C;
+}
+
+/* BOTÃO */
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: #F2C75C;
+    color: #2a2a2a;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* HOVER BOTÃO */
+button:hover {
+    background: #F2C75C;
+    transform: scale(1.03);
+}
+
+/* LINK VOLTAR */
+.voltar {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #aaa;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.voltar:hover {
+    color: #fff;
+}
+
+.form-page {
+    border-top: 4px solid #F2C75C;
+}
