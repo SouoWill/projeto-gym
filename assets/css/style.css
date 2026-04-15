@@ -46,7 +46,7 @@ body, html {
 /* HEADER */
 
 .main-header {
-    background: url(../imagens/imagem-fundo.jpg)  right bottom no-repeat fixed;
+    background: url(/assets/images/imagem-fundo.jpg)  right bottom no-repeat fixed;
     background-size: cover;
     height: 100vh;
     width: 100%;
@@ -178,23 +178,31 @@ body, html {
     padding: 10px;
 }
 
-.p-main-header {
+.h1-main-header {
+    font-size: small;
     color: rgb(102, 102, 102);
     text-transform: uppercase;
 }
 
-.title-main-header {
+.p-main-header {
     padding: 30px 0px;
+    font-size: 35px;
 }
 
 .span-title-main-header {
     color: var(--cor-1);
+    text-transform: uppercase;
 }
 
-.h2-main-header {
+.p2-main-header {
     font-size: 20px;
     font-weight: 400;
     padding: 30px 0px;
+}
+
+.p3-main-header {
+    padding-bottom: 30px;
+    color: rgb(102, 102, 102);
 }
 
 .btn-main-header {
@@ -207,12 +215,13 @@ body, html {
     font-weight: 600;
     font-size: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.521);
-    transition: .5s;
+    transition: .01s;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 .btn-main-header:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.671);
+    transform: scale(1.07);
 }
 
 /* MAIN */
@@ -252,7 +261,7 @@ body, html {
     height: 450px;
     width: 370px;
     margin-top: 30px;
-    background: #333 url(../imagens/halter.jpg) center center no-repeat;
+    background: #333 url(/assets/images/halter.jpg) center center no-repeat;
     background-size: cover;
     border-radius: 20px;
 
@@ -340,6 +349,7 @@ body, html {
 
 .check-section2  p{
     padding-left: 10px;
+    color: var(--cinza);
 }
 
 
@@ -533,7 +543,7 @@ body, html {
 .card-unidades .card-unidades-img {
     width: 100%;
     height: 180px;
-    background: var(--cor-1) url(../imagens/unidades.png) center center no-repeat;
+    background: var(--cor-1) url(/assets/images/unidades.png) center center no-repeat;
     background-size: cover;
 }
 

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agendamento</title>
+
+  <link rel="stylesheet" href="../assets/css/experimental.css">
+  <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+  <main class="form-page">
+
+    <h1>Agende seu treino experimental</h1>
+
+    <form>
+      <label for="nome">Nome</label>
+      <input id="nome" type="text" required placeholder="nome e sobrenome">
+
+      <label for="email">Email</label>
+      <input id="email" type="email" required placeholder="seuemail@gmail.com">
+
+      <label for="telefone">Telefone</label>
+      <input id="telefone" type="tel" required placeholder="(81) 98888-7777">
+
+      <label for="modalidade">Modalidade</label>
+      <select id="modalidade">
+        <option>Musculação</option>
+        <option>Muay Thai</option>
+        <option>Ginástica</option>
+      </select>
+
+      <button type="button" onclick="enviarWhatsApp()">Agendar</button>
+    </form>
+
+    <a href="../index.html" class="voltar">← Voltar</a>
+
+  </main>
+
+  <script src="/assets/js/experimental.js"></script>
+
+</body>
+</html>
