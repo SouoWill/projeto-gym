@@ -1,5 +1,5 @@
 function enviarWhatsApp() {
-    // Número de destino (seu número)
+    // Número de destino
     const telefoneDestino = "5581981358214";
 
     const nome = document.getElementById('nome').value;

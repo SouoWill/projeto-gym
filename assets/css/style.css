@@ -60,6 +60,7 @@ body, html {
     align-items: center;
     justify-content: space-around;
     border-bottom: 1px solid rgba(255, 255, 255, 0.048);
+    background-color: #00000060;
     padding: 20px 0px;
     position: fixed;
     top: 0;
@@ -115,7 +116,6 @@ body, html {
 #itens li a:hover {
     transform: scale(1.1);
     color: var(--cor-1);
-    text-shadow: 0px 0px 10px white;
     background-color: rgba(0, 0, 0, 0.3);
     opacity: 1;
 }
@@ -649,15 +649,15 @@ body, html {
 
     font-size: 15px;
     font-weight: 600;
+    text-decoration: none;
 
     background-color: black;
     color: var(--cor-1);
-    transition: .5s;
+    transition: .01s;
 }
 
 .btn-porque-nos:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 0px 10px 8px #3333333a;
+    transform: scale(1.07);
     color: var(--cinza);
 }
 
